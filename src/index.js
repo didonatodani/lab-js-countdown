@@ -36,7 +36,10 @@ function showToast(message) {
 
   const toastMessageElement = document.querySelector("#toast")
   toastMessageElement.classList.add("show")
-
+  const closeButton = document.querySelector('#close-toast')
+  closeButton.addEventListener('click', () => {
+    toastMessageElement.classList.remove("show")
+  })
   setTimeout(()=>{
     toastMessageElement.classList.remove("show")
   }, 3000);
