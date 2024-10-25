@@ -35,7 +35,6 @@ function startCountdown() {
       showToast(message3)
       remainingTime = DURATION+1;
       startButton.disabled = false;
-      
     }
   }, 1000);
 
