@@ -28,16 +28,18 @@ function startCountdown() {
       
     }
   }, 1000);
-  
 
-  console.log("startCountdown called!");
 }
 
 // ITERATION 3: Show Toast
 function showToast(message) {
-  console.log("showToast called!");
 
-  // Your code goes here ...
+  const toastMessageElement = document.querySelector("#toast")
+  toastMessageElement.classList.add("show")
+
+  setTimeout(()=>{
+    toastMessageElement.classList.remove("show")
+  }, 3000);
 
   // BONUS: ITERATION 4: TOAST CLOSE BUTTON
 
